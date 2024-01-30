@@ -1,5 +1,5 @@
 import React from 'react';
-import { BrowserRouter as Router, Route, Routes, Link } from 'react-router-dom';
+import { BrowserRouter as Router, Route, Routes, Link ,Navigate} from 'react-router-dom';
 import Home from '../components/Home';
 import Login from '../components/Login';
 import Contacto from '../components/Contacto';
@@ -36,6 +36,7 @@ function AppRouter() {
           <Route path="/contacto" element={<Contacto />} />
           <Route path="/comentarios" element={<Comentarios />} />
           <Route path="/login" element={<Login />} />
+          <Route path="*" element={<Navigate to="/" />} />
         </Routes>
       </div>
     </Router>
