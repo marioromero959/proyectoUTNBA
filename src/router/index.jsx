@@ -8,7 +8,6 @@ import Comentarios from '../components/Comentarios';
 
 function AppRouter() {
   return (
-    <Router>
       <div className='app-container'>
         <nav>
           <ul>
@@ -39,8 +38,7 @@ function AppRouter() {
           <Route path="*" element={<Navigate to="/" />} />
         </Routes>
       </div>
-    </Router>
   );
 }
 
-export default AppRouter;
+export default AppRouter; 
