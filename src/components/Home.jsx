@@ -1,7 +1,5 @@
 // Home.jsx
 import React from 'react';
-import ropa1Image1 from '../assets/ropa1.jpeg';
-import ropa1Image2 from '../assets/ropa2.jpeg';
 import p1 from '../assets/p1.jpeg';
 import p2 from '../assets/p2.jpeg';
 import p3 from '../assets/p3.jpeg';
@@ -27,21 +25,21 @@ const Home = () => {
       nombre:"Blazer Negro",
       precio:1000 ,
       descripcion:"Blazer negro clásico y elegante, perfecto para resaltar tu estilo con pureza y sofisticación.",
-      img:'/src/assets/p10.jpeg',
+      img:p10,
       oferta:true
     },
     {
       nombre:"Corset Negro",
       precio:1000,
       descripcion:"Corset negro seductor y versátil que añade un toque de misterio y glamour a cualquier ocasión.",
-      img:'src/assets/p7.jpeg',
+      img:p7,
       oferta:true
     },
     {
       nombre:"Top Negro",
       precio:800,
       descripcion:"Top negro elegancia y estilo en una prenda versátil y cómoda.este top redefine tu estilo con sofisticación",
-      img:'src/assets/p3.jpeg',
+      img:p3,
       oferta:true
     }
   ])
@@ -52,49 +50,46 @@ const Home = () => {
       nombre:"Blazer Negro",
       precio:1000 ,
       descripcion:"Blazer negro clásico y elegante, perfecto para resaltar tu estilo con pureza y sofisticación.",
-      img:'/src/assets/p10.jpeg',
+      img:p10,
       oferta:true
     },
     {
       nombre:"Corset Negro",
       precio:1000,
       descripcion:"Corset negro seductor y versátil que añade un toque de misterio y glamour a cualquier ocasión.",
-      img:'src/assets/p7.jpeg',
+      img:p7,
       oferta:true
     },
     {
       nombre:"Bikini Rayas",
       precio:1000,
       descripcion:"Corset negro seductor y versátil que añade un toque de misterio y glamour a cualquier ocasión.",
-      img:'src/assets/p4.jpeg',
+      img:p4,
       oferta:false
     },
     {
       nombre:"Top Negro",
       precio:800,
       descripcion:"Top negro elegancia y estilo en una prenda versátil y cómoda.este top redefine tu estilo con sofisticación",
-      img:'src/assets/p3.jpeg',
+      img:p3,
       oferta:true
     },
     {
       nombre:"Bikini Naranja",
       precio:1000 ,
       descripcion:"Blazer negro clásico y elegante, perfecto para resaltar tu estilo con pureza y sofisticación.",
-      img:'/src/assets/p1.jpeg',
+      img:p1,
       oferta:false
     },
     {
       nombre:"Corset Negro v2",
       precio:800,
       descripcion:"Top negro elegancia y estilo en una prenda versátil y cómoda.este top redefine tu estilo con sofisticación",
-      img:'src/assets/p6.jpeg',
+      img:p6,
       oferta:false
     }
   ])
-
-
-  const images = ['src/assets/p1.jpeg','src/assets/p3.jpeg','src/assets/p4.jpeg','src/assets/p5.jpeg','src/assets/p6.jpeg','src/assets/p7.jpeg'];
-
+  const images = [p1,p3,p4,p5,p6,p7];
   return (
     <div>
       {/* Encabezado */}
@@ -116,7 +111,7 @@ const Home = () => {
           <Carousel images={images} autoplay={false}/>
         </section>
         <section>
-          <Banner titulo={'Conocé nuestra marca'} fondo ={'src/assets/p12.jpeg'} />
+          <Banner titulo={'Conocé nuestra marca'} fondo ={p12} />
         </section>
 
 
@@ -130,7 +125,7 @@ const Home = () => {
         </section>
 
         <section>
-          <Banner titulo={'Bienvenida al squad de Velka'} fondo ={'src/assets/p7.jpeg'} />
+          <Banner titulo={'Bienvenida al squad de Velka'} fondo ={p7} />
         </section>
 
       {/* Pie de página */}
